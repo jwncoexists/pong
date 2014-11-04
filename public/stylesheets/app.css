@@ -1,0 +1,113 @@
+.pong-container {
+  background: #e7ffa0;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #e7ffa0 0%, #41e04b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #e7ffa0), color-stop(100%, #41e04b));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #e7ffa0 0%, #41e04b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #e7ffa0 0%, #41e04b 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #e7ffa0 0%, #41e04b 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #e7ffa0 0%, #41e04b 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7ffa0', endColorstr='#41e04b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  width: 1000px;
+  height: 400px;
+  display: inline-block; }
+
+.info-container {
+  position: absolute;
+  top: 10px;
+  left: 1020px;
+  width: 300px;
+  height: 400px; }
+
+/* setup the ball animation */
+/* provide both horizontal */
+/* and vertical animations */
+@-webkit-keyframes leftright {
+  0%, 100% {
+    transform: translate3d(5px, 200px, 0); }
+
+  50% {
+    transform: translate3d(980px, 200px, 0); } }
+
+@keyframes leftright {
+  0%, 100% {
+    transform: translate3d(5px, 200px, 0); }
+
+  50% {
+    transform: translate3d(980px, 200px, 0); } }
+
+@keyframes updown {
+  0%, 50%, 100% {
+    transform: translate3d(0, 0, 0); }
+
+  25% {
+    transform: translate3d(0, 200px, 0); }
+
+  75% {
+    transform: translate3d(0, -190px, 0); } }
+
+@-webkit-keyframes updown {
+  0%, 50%, 100% {
+    transform: translate3d(0, 0, 0); }
+
+  25% {
+    transform: translate3d(0, 180px, 0); }
+
+  75% {
+    transform: translate3d(0, -195px, 0); } }
+
+.vertical {
+  -webkit-animation: updown 4.3s infinite linear;
+  animation: updown 4.3s infinite linear; }
+
+.ball {
+  background-color: #f06926;
+  border-style: solid;
+  border-color: #f0f026;
+  width: 15px;
+  height: 15px;
+  border-radius: 50% 50%;
+  display: block;
+  position: absolute;
+  -webkit-animation: leftright 3.9s infinite linear;
+  animation: leftright 3.9s infinite linear; }
+
+.paddle {
+  height: 50px;
+  width: 15px;
+  border-radius: 5% 5%;
+  position: absolute; }
+
+.player {
+  background-color: #1b46f2;
+  top: 190px;
+  left: 985px; }
+
+.computer {
+  background-color: black;
+  top: 190px;
+  left: 0px; }
+
+#background-text {
+  position: absolute;
+  top: 60px;
+  left: 215px;
+  font-family: Verdana, serif;
+  font-size: 200px;
+  opacity: 0.1;
+  font-weight: bold;
+  color: rgba(9, 145, 25, 0.1);
+  text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(9, 145, 25, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px; }
+
+span {
+  color: blue; }
+
+
+/*# sourceMappingURL=app.css.map*/
