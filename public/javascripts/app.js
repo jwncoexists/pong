@@ -141,7 +141,7 @@ $(document).ready(function() {
     
     // increment numLosses global variable & stats display
     numLosses += 1;
-    $('#num-losses').text(numLosses);
+    $('#num-player-losses').text(numLosses);
   }
 
   // startup game again

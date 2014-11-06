@@ -4,6 +4,7 @@
      <title>Pong</title>
      <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
      <script src="/javascripts/vendor.js"></script>
@@ -24,12 +25,20 @@
     </div>
 
     <div class="info-container">
-      <h3>Pong Stats:</h3>
-      <ul>
-        <li>Duration: <span id="duration"></span></li>
-        <li>Max Duration: <span id="max-duration"></span></li>
-        <li>Losses: <span id="num-losses"></span></li>
-      </ul>
+      <table class ="table table-condensed">
+        <tr>
+          <td>Losses:</td>
+          <td><span id="num-player-losses"></span></td>
+        </tr>
+        <tr>
+          <td>Cur Duration:</td>
+          <td> <span id="duration"></span></td>
+        </tr>
+        <tr>
+          <td>Max Duration:</td>
+          <td> <span id="max-duration"></span></td>
+        </tr>
+      </table>
     </div>
     
   </body>
