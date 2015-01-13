@@ -1,6 +1,6 @@
 # Pong
 
-A classic pong application developed with NodeJS, Bower, HTML5, CSS, SASS.
+A classic pong application developed with HTML5 & CSS animation.
 
 ## Getting started
 * Install (if you don't have them):
@@ -13,5 +13,11 @@ A classic pong application developed with NodeJS, Bower, HTML5, CSS, SASS.
   * npm install
   * bower install
 
+* index.html is located in the /public folder
+
 * Run pong:
   * npm start
+
+## Screenshots
+
+![pong](/doc/screenshot-pong-1.png)
